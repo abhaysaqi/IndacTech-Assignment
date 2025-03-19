@@ -19,7 +19,9 @@ class VideoTile extends StatelessWidget {
         children: [
           ClipRRect(
               borderRadius: BorderRadius.circular(20),
-              child: CachedNetworkImage(imageUrl: video.thumbnailUrl)),
+              child: con.isOffline
+                  ? Image.asset(video.thumbnailUrl)
+                  : CachedNetworkImage(imageUrl: video.thumbnailUrl)),
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [

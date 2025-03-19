@@ -55,6 +55,8 @@ class VideoController extends GetxController {
 
   /// ✅ Fetch Videos from SQLite if offline
   Future<void> fetchVideosFromDB() async {
+    isLoading = true;
+    update();
     videoList = await DBHelper.getVideos();
     if (videoList.isEmpty) {
       isOffline = true;
@@ -62,6 +64,7 @@ class VideoController extends GetxController {
     } else {
       print('Fetched videos from local DB!');
     }
+    isLoading = false;
     update();
   }
 
