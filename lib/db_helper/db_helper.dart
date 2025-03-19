@@ -8,13 +8,13 @@ class DBHelper {
   static const String dbName = 'videos.db';
   static const String table = 'videos';
 
-  /// ✅ Initialize DB
+  /// Initialize DB
   static Future<Database> get db async {
     _db ??= await initDB();
     return _db!;
   }
 
-  /// ✅ Create Table for Videos
+  /// Create Table for Videos
   static Future<Database> initDB() async {
     String path = join(await getDatabasesPath(), dbName);
     return await openDatabase(
@@ -35,7 +35,7 @@ class DBHelper {
     );
   }
 
-  /// ✅ Save Videos in SQLite
+  /// Save Videos in SQLite
   static Future<void> saveVideos(List<VideoModel> videos) async {
     final dbClient = await db;
     await dbClient.delete(table); // Clear old data before insert
@@ -45,7 +45,7 @@ class DBHelper {
     }
   }
 
-  /// ✅ Fetch Videos from SQLite
+  /// Fetch Videos from SQLite
   static Future<List<VideoModel>> getVideos() async {
     final dbClient = await db;
     final List<Map<String, dynamic>> maps = await dbClient.query(table);
@@ -56,7 +56,7 @@ class DBHelper {
     return List.generate(maps.length, (i) => VideoModel.fromJson(maps[i]));
   }
 
-  /// ✅ Check if Video is Liked
+  /// Check if Video is Liked
   static Future<bool> isVideoLiked(String id) async {
     final dbClient = await db;
     final List<Map<String, dynamic>> maps =
@@ -67,7 +67,7 @@ class DBHelper {
     return false;
   }
 
-  /// ✅ Get Total Likes
+  /// Get Total Likes
   static Future<int> totalLikes(String id) async {
     final dbClient = await db;
     final List<Map<String, dynamic>> maps =
@@ -78,7 +78,7 @@ class DBHelper {
     return 0;
   }
 
-  /// ✅ Update Likes in SQLite
+  /// Update Likes in SQLite
   static Future<void> updateLikes(String id, int likes, int isLiked) async {
     final dbClient = await db;
     await dbClient.update(
