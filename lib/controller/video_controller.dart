@@ -19,7 +19,7 @@ class VideoController extends GetxController {
     checkInternetAndFetchData();
   }
 
-  /// ✅ Check Internet and Fetch Videos
+  /// Check Internet and Fetch Videos
   Future<void> checkInternetAndFetchData() async {
     var connectivityResult = (await Connectivity().checkConnectivity()).first;
 
@@ -36,7 +36,7 @@ class VideoController extends GetxController {
     }
   }
 
-  /// ✅ Fetch Videos from API
+  /// Fetch Videos from API
   Future<void> fetchVideosFromAPI() async {
     try {
       isLoading = true;
@@ -53,7 +53,7 @@ class VideoController extends GetxController {
     update();
   }
 
-  /// ✅ Fetch Videos from SQLite if offline
+  /// Fetch Videos from SQLite if offline
   Future<void> fetchVideosFromDB() async {
     isLoading = true;
     update();
@@ -68,7 +68,7 @@ class VideoController extends GetxController {
     update();
   }
 
-  /// ✅ Sync Likes from SQLite and Firestore
+  /// Sync Likes from SQLite and Firestore
   Future<void> checkAndSyncLikes() async {
     for (var video in videoList) {
       int? likesFromFirestore = await FirebaseService.getLikes(video.videoId);
@@ -88,7 +88,7 @@ class VideoController extends GetxController {
     update();
   }
 
-  /// ✅ Toggle Like
+  /// Toggle Like
   Future<void> toggleLike(VideoModel video) async {
     if (likedVideos.contains(video.videoId)) {
       likedVideos.remove(video.videoId);
