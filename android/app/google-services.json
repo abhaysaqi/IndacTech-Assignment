@@ -1,0 +1,83 @@
+{
+  "project_info": {
+    "project_number": "778624012755",
+    "firebase_url": "https://simpletest-d20ad-default-rtdb.firebaseio.com",
+    "project_id": "simpletest-d20ad",
+    "storage_bucket": "simpletest-d20ad.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:778624012755:android:3691b28900cd2a06805f26",
+        "android_client_info": {
+          "package_name": "com.abhaydev.spotify"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "778624012755-or866ujmil6si39qmrv40vulm1c4pgs8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCs1u0454zR233aDDTwI4kE5IQqJwqAv8U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "778624012755-or866ujmil6si39qmrv40vulm1c4pgs8.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "778624012755-jgfmehob6ci6ao529hn0cmfev7ds4jos.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.abhaydev.spotify"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:778624012755:android:2882516c65297a38805f26",
+        "android_client_info": {
+          "package_name": "com.example.indactech_video_assesment"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "778624012755-or866ujmil6si39qmrv40vulm1c4pgs8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCs1u0454zR233aDDTwI4kE5IQqJwqAv8U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "778624012755-or866ujmil6si39qmrv40vulm1c4pgs8.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "778624012755-jgfmehob6ci6ao529hn0cmfev7ds4jos.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.abhaydev.spotify"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
