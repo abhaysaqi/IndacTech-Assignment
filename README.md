@@ -1,16 +1,19 @@
-# indactech_video_assesment
+# 🎥 Responsive Video Playlist with Likes ❤️
 
-A new Flutter project.
+This Flutter project fetches videos from the **YouTube API**, displays them with thumbnails and like buttons, and syncs likes with **SQLite** and **Firebase Firestore**.
 
-## Getting Started
+---
 
-This project is a starting point for a Flutter application.
+## 📸 Screenshots
 
-A few resources to get you started if this is your first Flutter project:
+![Mobile ListView](https://via.placeholder.com/300x600?text=Mobile+ListView)  
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+---
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## 🚀 Features
+
+✅ Fetches videos from **YouTube API**  
+✅ Like/Unlike videos with ❤️ button  
+✅ Stores likes in **SQLite** and syncs with **Firebase Firestore**  
+✅ Offline support with cached videos and sync on reconnect  
+✅ Responsive UI: ListView for mobile, GridView for web  
