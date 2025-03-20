@@ -47,33 +47,33 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyC7knrHpyrlGXDQ5RiGa-9ieoAOichqMLY',
-    appId: '1:778624012755:web:888badac481755a4805f26',
-    messagingSenderId: '778624012755',
-    projectId: 'simpletest-d20ad',
-    authDomain: 'simpletest-d20ad.firebaseapp.com',
-    databaseURL: 'https://simpletest-d20ad-default-rtdb.firebaseio.com',
-    storageBucket: 'simpletest-d20ad.appspot.com',
+    apiKey: '',
+    appId: '',
+    messagingSenderId: '',
+    projectId: '',
+    authDomain: '',
+    databaseURL: '',
+    storageBucket: '',
   );
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyCs1u0454zR233aDDTwI4kE5IQqJwqAv8U',
-    appId: '1:778624012755:android:2882516c65297a38805f26',
-    messagingSenderId: '778624012755',
-    projectId: 'simpletest-d20ad',
-    databaseURL: 'https://simpletest-d20ad-default-rtdb.firebaseio.com',
-    storageBucket: 'simpletest-d20ad.appspot.com',
+    apiKey: '',
+    appId: '',
+    messagingSenderId: '',
+    projectId: '',
+    databaseURL: '',
+    storageBucket: '',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyACkFDz0Cj-UmVWDHUt-J375H0Jm9lcG9c',
-    appId: '1:778624012755:ios:43f90501bce3050b805f26',
-    messagingSenderId: '778624012755',
-    projectId: 'simpletest-d20ad',
-    databaseURL: 'https://simpletest-d20ad-default-rtdb.firebaseio.com',
-    storageBucket: 'simpletest-d20ad.appspot.com',
-    androidClientId: '778624012755-brol3314ovagjfiba7qukf0ddnio8u5i.apps.googleusercontent.com',
-    iosClientId: '778624012755-0348sjamprdv1vh7l9vo3mtbg88pt79s.apps.googleusercontent.com',
-    iosBundleId: 'com.example.indactechVideoAssesment',
+    apiKey: '',
+    appId: '',
+    messagingSenderId: '',
+    projectId: '',
+    databaseURL: '',
+    storageBucket: '',
+    androidClientId: '',
+    iosClientId: '',
+    iosBundleId: '',
   );
 }
