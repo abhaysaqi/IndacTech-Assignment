@@ -5,7 +5,7 @@ import 'package:indactech_video_assesment/view/video_screen.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  // await dotenv.load(fileName: ".env");
+  await dotenv.load(fileName: ".env");
   await Firebase.initializeApp();
   runApp(const MyApp());
 }
